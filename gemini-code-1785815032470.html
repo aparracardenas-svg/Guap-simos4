@@ -1,0 +1,1682 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Guapísimos Peluquería Canina | Bucaramanga</title>
+<meta name="description" content="Guapísimos Peluquería Canina — un hermoso lugar para consentir a tu mascota, con muchísimo amor y profesionalismo. Bucaramanga, Santander.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700;9..144,900&family=Work+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ink:#17181B;
+    --ink-soft:#3E4A52;
+    --cream:#F5FAFD;
+    --paper:#FFFFFF;
+    --gold:#21A8DE;
+    --gold-deep:#157DA8;
+    --blush:#CDEEF9;
+    --sage:#1C93C4;
+    --sage-deep:#0E5E7D;
+    --line: rgba(23,24,27,0.14);
+    --shadow: 0 12px 30px -14px rgba(14,94,125,0.35);
+    --radius: 18px;
+  }
+
+  *{box-sizing:border-box; min-width:0;}
+  html{scroll-behavior:smooth; overflow-x:hidden; max-width:100%;}
+  body{
+    margin:0;
+    background:var(--cream);
+    color:var(--ink);
+    font-family:'Work Sans', sans-serif;
+    line-height:1.5;
+    -webkit-font-smoothing:antialiased;
+    position:relative;
+    overflow-x:hidden;
+  }
+  .bg-decor{
+    position:fixed;
+    inset:0;
+    z-index:-1;
+    overflow:hidden;
+    pointer-events:none;
+  }
+  .bg-decor span{
+    position:absolute;
+    border-radius:50%;
+    filter:blur(85px);
+  }
+  .bg-decor .b1{width:460px; height:460px; background:#21A8DE; opacity:0.28; top:-140px; left:-120px;}
+  .bg-decor .b2{width:400px; height:400px; background:#1C93C4; opacity:0.22; top:26%; right:-160px;}
+  .bg-decor .b3{width:380px; height:380px; background:#CDEEF9; opacity:0.5; bottom:6%; left:12%;}
+  .bg-decor .b4{width:320px; height:320px; background:#157DA8; opacity:0.18; bottom:-100px; right:8%;}
+  .bg-decor .b5{width:260px; height:260px; background:#21A8DE; opacity:0.16; top:55%; left:44%;}
+  
+  h1,h2,h3{
+    font-family:'Fraunces', serif;
+    margin:0 0 0.4em 0;
+    font-weight:600;
+    letter-spacing:-0.01em;
+  }
+  .mono{
+    font-family:'JetBrains Mono', monospace;
+  }
+  a{color:inherit;}
+  img{max-width:100%; display:block;}
+  .wrap{
+    max-width:1120px;
+    margin:0 auto;
+    padding:0 24px;
+  }
+  .eyebrow{
+    font-family:'JetBrains Mono', monospace;
+    font-size:0.72rem;
+    letter-spacing:0.16em;
+    text-transform:uppercase;
+    color:var(--sage-deep);
+    display:flex;
+    align-items:center;
+    gap:10px;
+  }
+  .eyebrow::before{
+    content:"";
+    width:22px;
+    height:1px;
+    background:var(--sage-deep);
+    display:inline-block;
+  }
+
+  /* reduced motion */
+  @media (prefers-reduced-motion: reduce){
+    *{animation:none !important; transition:none !important; scroll-behavior:auto !important;}
+  }
+
+  /* ---------- HEADER ---------- */
+  header{
+    position:sticky;
+    top:0;
+    z-index:50;
+    background:rgba(245,250,253,0.55);
+    backdrop-filter:blur(18px) saturate(160%);
+    -webkit-backdrop-filter:blur(18px) saturate(160%);
+    border-bottom:1px solid rgba(255,255,255,0.6);
+    box-shadow:0 8px 30px -18px rgba(14,94,125,0.3);
+  }
+  .nav{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding:14px 0;
+  }
+  .brand{
+    display:flex;
+    align-items:center;
+    gap:12px;
+    text-decoration:none;
+  }
+  .brand-mark{
+    height:46px;
+    display:flex;
+    align-items:center;
+    flex-shrink:0;
+  }
+  .brand-mark img{height:100%;width:auto;object-fit:contain;}
+  .brand-name{
+    font-family:'Fraunces', serif;
+    font-weight:700;
+    font-size:1.05rem;
+    line-height:1.15;
+  }
+  .brand-name span{
+    display:block;
+    font-family:'JetBrains Mono', monospace;
+    font-weight:400;
+    font-size:0.62rem;
+    letter-spacing:0.1em;
+    text-transform:uppercase;
+    color:var(--sage-deep);
+    margin-top:2px;
+  }
+  nav.links{
+    display:flex;
+    gap:20px;
+    font-size:0.88rem;
+    font-weight:500;
+  }
+  nav.links a{
+    text-decoration:none;
+    position:relative;
+    padding-bottom:2px;
+  }
+  nav.links a::after{
+    content:"";
+    position:absolute;
+    left:0;bottom:-3px;
+    width:0%;
+    height:2px;
+    background:var(--gold);
+    transition:width .25s ease;
+  }
+  nav.links a:hover::after{width:100%;}
+  .btn{
+    display:inline-flex;
+    align-items:center;
+    gap:8px;
+    padding:11px 20px;
+    border-radius:999px;
+    font-weight:600;
+    font-size:0.88rem;
+    text-decoration:none;
+    border:2px solid var(--ink);
+    cursor:pointer;
+    transition:transform .18s ease, box-shadow .18s ease;
+  }
+  .btn:hover{transform:translateY(-2px); box-shadow:var(--shadow);}
+  .btn:focus-visible{outline:3px solid var(--sage-deep); outline-offset:2px;}
+  .btn-solid{
+    background:var(--ink);
+    color:var(--cream);
+  }
+  .btn-gold{
+    background:var(--gold);
+    border-color:var(--ink);
+    color:var(--ink);
+  }
+  .btn-ghost{
+    background:transparent;
+  }
+  .btn-waze {
+    background: #33CCFF;
+    border-color: transparent;
+    color: #17181B;
+  }
+  .btn-waze:hover {
+    border-color: #17181B;
+  }
+  .nav-cta{display:none;}
+  @media(min-width:840px){.nav-cta{display:inline-flex;}}
+  .menu-toggle{
+    display:inline-flex;
+    background:none;
+    border:2px solid var(--ink);
+    border-radius:10px;
+    padding:8px 10px;
+    cursor:pointer;
+  }
+  @media(min-width:840px){nav.links{display:flex;} .menu-toggle{display:none;}}
+  @media(max-width:839px){
+    nav.links{
+      position:absolute;
+      top:100%;left:0;right:0;
+      background:var(--cream);
+      flex-direction:column;
+      gap:0;
+      border-bottom:1px solid var(--line);
+      max-height:0;
+      overflow:hidden;
+      transition:max-height .3s ease;
+    }
+    nav.links.open{max-height:320px;}
+    nav.links a{padding:14px 24px; border-top:1px solid var(--line);}
+    nav.links a::after{display:none;}
+  }
+
+  /* ---------- HERO ---------- */
+  .hero{
+    position:relative;
+    padding:32px 0 40px; /* Reducido a la mitad desde 64px */
+    overflow:hidden;
+  }
+  .hero-grid{
+    display:grid;
+    gap:40px;
+    align-items:center;
+  }
+  @media(min-width:900px){
+    .hero-grid{grid-template-columns:1.1fr 0.9fr;}
+  }
+  .hero h1{
+    font-size:clamp(2.3rem, 5vw, 3.6rem);
+    line-height:1.04;
+  }
+  .hero h1 em{
+    font-style:normal;
+    color:var(--gold-deep);
+    background:linear-gradient(180deg, transparent 62%, var(--blush) 62%);
+    padding:0 2px;
+  }
+  .hero p.lead{
+    font-size:1.12rem;
+    color:var(--ink-soft);
+    max-width:46ch;
+    margin:18px 0 28px;
+  }
+  .hero-actions{
+    display:flex;
+    flex-wrap:wrap;
+    gap:14px;
+    margin-bottom:28px;
+  }
+  
+  .hero-stats{
+    display:flex;
+    gap:18px;
+    flex-wrap:wrap;
+    align-items:center;
+  }
+  .stat{
+    font-family:'JetBrains Mono', monospace;
+  }
+  .stat b{
+    display:block;
+    font-family:'Fraunces', serif;
+    color:var(--ink);
+    font-size:1.6rem;
+  }
+  .stat span{
+    font-size:0.68rem;
+    letter-spacing:0.06em;
+    text-transform:uppercase;
+    color:var(--sage-deep);
+    font-weight:600;
+  }
+
+  /* ---------- WAVE DIVIDER ---------- */
+  .wave{
+    display:block;
+    width:100%;
+    line-height:0;
+  }
+  .wave svg{width:100%;height:56px;display:block;}
+
+  /* ---------- SECTION SHELL ---------- */
+  section{padding:76px 0;}
+  .section-head{
+    max-width:640px;
+    margin:0 0 44px;
+  }
+  .section-head h2{
+    font-size:clamp(1.8rem, 3.4vw, 2.5rem);
+    margin-top:10px;
+  }
+  .section-head p{
+    color:var(--ink-soft);
+    font-size:1.02rem;
+  }
+
+  /* ---------- SERVICES (TICKET CARDS) ---------- */
+  .band-sage{
+    background:rgba(28,147,196,0.82);
+    backdrop-filter:blur(6px);
+    -webkit-backdrop-filter:blur(6px);
+    color:var(--paper);
+    position:relative;
+  }
+  .band-sage .eyebrow, .band-sage .eyebrow::before{color:var(--paper);}
+  .band-sage .section-head p{color:rgba(255,253,248,0.85);}
+
+  .breed-note{
+    font-size:0.8rem;
+    color:var(--ink-soft);
+    margin:-8px 0 2px;
+  }
+  .ticket-list{
+    list-style:none;
+    margin:0;
+    padding:0;
+    display:flex;
+    flex-direction:column;
+    gap:4px; /* Más compacto */
+    font-size:0.82rem; /* Más compacto */
+    color:var(--ink-soft);
+    flex:1;
+  }
+  .ticket-list li{
+    display:flex;
+    align-items:flex-start;
+    gap:8px;
+  }
+  .ticket-list li::before{
+    content:"";
+    width:5px;height:5px; /* Viñeta más pequeña */
+    border-radius:50%;
+    background:var(--sage-deep);
+    margin-top:6px;
+    flex-shrink:0;
+  }
+  .ticket-extra-list{
+    list-style:none;
+    margin:0;
+    padding:0;
+    display:flex;
+    flex-direction:column;
+    gap:0;
+    flex:1;
+  }
+  .ticket-extra-list li{
+    display:flex;
+    justify-content:space-between;
+    align-items:baseline;
+    gap:10px;
+    font-size:0.82rem; /* Más compacto */
+    color:var(--ink-soft);
+    border-top:1px dashed var(--line);
+    padding:6px 0; /* Más compacto */
+  }
+  .ticket-extra-list li:first-child{border-top:none; padding-top:0;}
+  .ticket-extra-list b{
+    font-family:'JetBrains Mono', monospace;
+    color:var(--gold-deep);
+    font-weight:700;
+    white-space:nowrap;
+    font-size:0.82rem;
+  }
+
+  .ticket-grid{
+    display:grid;
+    gap:20px; /* Reducido para compactar vista general */
+    grid-template-columns:repeat(auto-fit, minmax(270px,1fr));
+  }
+  
+  .ticket{
+    background-color: rgba(245, 250, 253, 0.55);
+    backdrop-filter: blur(18px) saturate(160%);
+    -webkit-backdrop-filter: blur(18px) saturate(160%);
+    border: 1px solid rgba(255, 255, 255, 0.6);
+    box-shadow: 0 8px 30px -18px rgba(14, 94, 125, 0.3);
+    
+    color: var(--ink);
+    border-radius: 14px;
+    position: relative;
+    padding: 18px 18px 16px; /* Ajuste más compacto */
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Ajuste más compacto */
+    
+    background-image: radial-gradient(circle, var(--sage) 5px, transparent 5.5px);
+    background-repeat: repeat-x;
+    background-size: 20px 12px;
+    background-position: bottom -6px left 4px;
+  }
+  
+  .ticket::before, .ticket::after{
+    content:"";
+    position:absolute;
+    bottom:-9px;
+    width:18px;height:18px;
+    background:var(--sage);
+    border-radius:50%;
+  }
+  .ticket::before{left:-9px;}
+  .ticket::after{right:-9px;}
+  .ticket-top{
+    display:flex;
+    justify-content:space-between;
+    align-items:flex-start;
+    gap:10px;
+  }
+  .ticket-icon{
+    width:36px;height:36px; /* Ícono más pequeño */
+    border-radius:10px;
+    background:var(--cream);
+    display:flex;align-items:center;justify-content:center;
+    flex-shrink:0;
+  }
+  .ticket-icon svg {
+    width:18px; height:18px;
+  }
+  .ticket-no{
+    font-family:'JetBrains Mono', monospace;
+    font-size:0.65rem;
+    color:var(--ink-soft);
+    text-align:right;
+  }
+  .ticket h3{
+    font-size:1.05rem; /* Título más compacto */
+    margin:0;
+  }
+  .ticket .desc{
+    font-size:0.85rem;
+    color:var(--ink-soft);
+    flex:1;
+  }
+  .ticket-foot{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    border-top:1px dashed var(--line);
+    padding-top:10px; /* Más compacto */
+    font-family:'JetBrains Mono', monospace;
+  }
+  .ticket-price{
+    font-size:0.95rem; /* Más compacto */
+    font-weight:700;
+    color:var(--gold-deep);
+  }
+  .ticket-time{
+    font-size:0.75rem;
+    color:var(--ink-soft);
+  }
+  .price-note{
+    margin-top:24px;
+    font-size:0.85rem;
+    color:rgba(255,253,248,0.85);
+  }
+
+  /* ---------- GALERÍA / INSTAGRAM ---------- */
+  .ig-card{
+    display:flex;
+    align-items:center;
+    gap:18px;
+    flex-wrap:wrap;
+    text-decoration:none;
+    color:var(--ink);
+    background:rgba(255,255,255,0.5);
+    backdrop-filter:blur(20px) saturate(160%);
+    -webkit-backdrop-filter:blur(20px) saturate(160%);
+    border:1px solid rgba(255,255,255,0.65);
+    border-radius:var(--radius);
+    box-shadow:var(--shadow);
+    padding:22px 26px;
+    transition:transform .18s ease, box-shadow .18s ease;
+  }
+  .ig-card:hover{transform:translateY(-2px); box-shadow:0 18px 34px -16px rgba(14,94,125,0.45);}
+  .ig-card-icon{
+    width:56px;height:56px;
+    border-radius:16px;
+    flex-shrink:0;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    background:linear-gradient(135deg,#4f5bd5,#962fbf,#d62976,#fa7e1e,#feda75);
+  }
+  .ig-card-body{
+    display:flex;
+    flex-direction:column;
+    gap:4px;
+    flex:1;
+    min-width:200px;
+  }
+  .ig-card-handle{
+    font-family:'Fraunces', serif;
+    font-weight:700;
+    font-size:1.08rem;
+  }
+  .ig-card-sub{
+    font-size:0.86rem;
+    color:var(--ink-soft);
+  }
+  .ig-card-cta{
+    display:inline-flex;
+    align-items:center;
+    gap:6px;
+    font-weight:600;
+    font-size:0.88rem;
+    color:var(--gold-deep);
+    white-space:nowrap;
+  }
+
+  /* ---------- ANTES / DESPUÉS (CARRUSEL) ---------- */
+  .ba-carousel{
+    position:relative;
+    max-width:520px;
+    margin:0 auto;
+  }
+  .ba-carousel .ba-track{
+    display:flex;
+    transition:transform .4s ease;
+  }
+  .ba-carousel .ba-card{
+    flex:0 0 100%;
+    min-width:0;
+    display:flex;
+    flex-direction:column;
+    gap:10px;
+    padding:0 2px;
+  }
+  .ba-arrow{
+    position:absolute;
+    top:calc(50% - 28px);
+    transform:translateY(-50%);
+    width:42px;height:42px;
+    border-radius:50%;
+    border:1px solid rgba(255,255,255,0.65);
+    background:rgba(255,255,255,0.55);
+    backdrop-filter:blur(14px) saturate(160%);
+    -webkit-backdrop-filter:blur(14px) saturate(160%);
+    box-shadow:var(--shadow);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    cursor:pointer;
+    z-index:5;
+  }
+  .ba-arrow-prev{left:-14px;}
+  .ba-arrow-next{right:-14px;}
+  @media(min-width:600px){
+    .ba-arrow-prev{left:-52px;}
+    .ba-arrow-next{right:-52px;}
+  }
+  .ba-dots{
+    display:flex;
+    justify-content:center;
+    gap:8px;
+    margin-top:16px;
+  }
+  .ba-dot{
+    width:8px;height:8px;
+    border-radius:50%;
+    border:0;
+    padding:0;
+    background:rgba(23,24,27,0.22);
+    cursor:pointer;
+  }
+  .ba-dot.active{
+    background:var(--gold-deep);
+    width:22px;
+    border-radius:999px;
+    transition:width .2s ease;
+  }
+  .ba-slider{
+    position:relative;
+    aspect-ratio:4/3;
+    border-radius:var(--radius);
+    overflow:hidden;
+    box-shadow:var(--shadow);
+    border:1px solid rgba(255,255,255,0.6);
+    user-select:none;
+    touch-action:pan-y;
+  }
+  .ba-after, .ba-before{
+    position:absolute;
+    inset:0;
+    background-size:cover;
+    background-position:center;
+  }
+  .ba-tag{
+    position:absolute;
+    top:12px;
+    font-family:'JetBrains Mono', monospace;
+    font-size:0.68rem;
+    letter-spacing:0.06em;
+    text-transform:uppercase;
+    padding:5px 10px;
+    border-radius:999px;
+    background:rgba(23,24,27,0.6);
+    color:#fff;
+    backdrop-filter:blur(6px);
+    pointer-events:none;
+  }
+  .ba-tag-before{left:12px;}
+  .ba-tag-after{right:12px;}
+  .ba-range{
+    position:absolute;
+    inset:0;
+    width:100%;
+    height:100%;
+    margin:0;
+    opacity:0;
+    cursor:ew-resize;
+    -webkit-appearance:none;
+    appearance:none;
+  }
+  .ba-handle{
+    position:absolute;
+    top:0;
+    bottom:0;
+    width:0;
+    pointer-events:none;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    transform:translateX(-50%);
+  }
+  .ba-handle::before{
+    content:"";
+    position:absolute;
+    top:0; bottom:0;
+    width:2px;
+    background:#fff;
+    box-shadow:0 0 0 1px rgba(0,0,0,0.08);
+  }
+  .ba-handle svg{
+    position:relative;
+    width:34px;height:34px;
+    background:#fff;
+    border-radius:50%;
+    padding:9px;
+    box-shadow:0 6px 16px -6px rgba(14,94,125,0.5);
+  }
+  .ba-caption{
+    font-size:0.7rem;
+    color:var(--ink-soft);
+    text-align:center;
+    margin:0;
+  }
+
+  /* ---------- VIDEO EN HERO (AJUSTES) ---------- */
+  .video-frame{
+    aspect-ratio:16/9;
+    border-radius:24px;
+    background:rgba(255,255,255,0.4);
+    backdrop-filter:blur(20px) saturate(160%);
+    -webkit-backdrop-filter:blur(20px) saturate(160%);
+    border:1.5px dashed rgba(23,24,27,0.25);
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    gap:14px;
+    text-align:center;
+    padding:20px;
+    box-shadow:var(--shadow);
+  }
+  .video-play{
+    width:64px;height:64px;
+    border-radius:50%;
+    background:rgba(23,24,27,0.65);
+    backdrop-filter:blur(6px);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+  }
+  .video-frame-label{
+    font-size:0.72rem;
+    color:var(--ink-soft);
+    margin:0;
+  }
+  .video-frame-note{
+    font-size:0.85rem;
+    color:var(--ink-soft);
+    max-width:32ch;
+    margin:0;
+  }
+  .video-real{
+    width:100%;
+    aspect-ratio:16/9;
+    border-radius:24px;
+    overflow:hidden;
+    box-shadow:var(--shadow);
+    border:1px solid rgba(255,255,255,0.6);
+  }
+  .video-real, .video-real video, .video-real iframe{
+    display:block;
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    border:0;
+  }
+
+  /* ---------- TIPS ---------- */
+  .tips-list{
+    display:flex;
+    flex-direction:column;
+    gap:14px;
+    max-width:760px;
+  }
+  .tip-item{
+    background:rgba(255,255,255,0.5);
+    backdrop-filter:blur(20px) saturate(160%);
+    -webkit-backdrop-filter:blur(20px) saturate(160%);
+    border:1px solid rgba(255,255,255,0.65);
+    border-radius:14px;
+    padding:0 22px;
+    box-shadow:var(--shadow);
+    color:var(--ink);
+  }
+  .tip-item summary{
+    cursor:pointer;
+    list-style:none;
+    padding:16px 0;
+    font-weight:600;
+    font-family:'Fraunces', serif;
+    font-size:1.02rem;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:12px;
+  }
+  .tip-item summary::-webkit-details-marker{display:none;}
+  .tip-item summary::after{
+    content:"+";
+    font-family:'JetBrains Mono', monospace;
+    font-size:1.3rem;
+    color:var(--gold-deep);
+    flex-shrink:0;
+  }
+  .tip-item[open] summary::after{content:"–";}
+  .tip-item p{
+    margin:0 0 18px;
+    color:var(--ink-soft);
+    font-size:0.94rem;
+    line-height:1.6;
+  }
+
+  /* ---------- BOOKING ---------- */
+  .booking{
+    background:rgba(23,24,27,0.82);
+    backdrop-filter:blur(14px) saturate(140%);
+    -webkit-backdrop-filter:blur(14px) saturate(140%);
+    border:1px solid rgba(255,255,255,0.08);
+    color:var(--cream);
+    border-radius:28px;
+    padding:48px clamp(20px,5vw,56px);
+    display:grid;
+    gap:40px;
+  }
+  @media(min-width:900px){.booking{grid-template-columns:0.9fr 1.1fr;}}
+  .booking .eyebrow, .booking .eyebrow::before{color:var(--gold);}
+  .booking h2{color:var(--cream); font-size:clamp(1.8rem,3vw,2.3rem);}
+  .booking p{color:rgba(251,246,239,0.78);}
+  .steps{
+    list-style:none;
+    margin:26px 0 0;
+    padding:0;
+    display:flex;
+    flex-direction:column;
+    gap:16px;
+  }
+  .steps li{
+    display:flex;
+    gap:14px;
+    align-items:flex-start;
+    font-size:0.95rem;
+  }
+  .steps b{
+    font-family:'JetBrains Mono', monospace;
+    background:var(--gold);
+    color:var(--ink);
+    width:26px;height:26px;
+    border-radius:50%;
+    display:flex;align-items:center;justify-content:center;
+    font-size:0.75rem;
+    flex-shrink:0;
+  }
+
+  .booking-panels{
+    display:flex;
+    flex-direction:column;
+    gap:14px;
+  }
+  .booking-tabs{
+    display:flex;
+    gap:6px;
+    background:rgba(255,255,255,0.12);
+    border:1px solid rgba(255,255,255,0.15);
+    border-radius:999px;
+    padding:5px;
+    width:100%;
+    max-width:100%;
+    box-sizing:border-box;
+  }
+  .booking-tab{
+    flex:1 1 0;
+    min-width:0;
+    border:0;
+    background:transparent;
+    color:rgba(251,246,239,0.75);
+    font-family:'Work Sans', sans-serif;
+    font-weight:600;
+    font-size:0.76rem;
+    line-height:1.25;
+    padding:9px 10px;
+    border-radius:999px;
+    cursor:pointer;
+    white-space:normal;
+    text-align:center;
+    transition:background .2s ease, color .2s ease;
+  }
+  @media(min-width:520px){
+    .booking-tabs{width:fit-content;}
+    .booking-tab{flex:none; font-size:0.82rem; padding:9px 16px; white-space:nowrap;}
+  }
+  .booking-tab.active{
+    background:var(--gold);
+    color:var(--ink);
+  }
+  .calendar-empty{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    text-align:center;
+    gap:10px;
+    padding:32px 10px;
+    color:var(--ink-soft);
+  }
+  .calendar-empty h4{
+    margin:4px 0 0;
+    font-family:'Fraunces', serif;
+    font-size:1.1rem;
+    color:var(--ink);
+  }
+  .calendar-empty p{margin:0; font-size:0.9rem;}
+  .calendar-note{font-size:0.72rem; opacity:0.8;}
+
+  .form-card{
+    background:rgba(255,255,255,0.86);
+    backdrop-filter:blur(22px) saturate(160%);
+    -webkit-backdrop-filter:blur(22px) saturate(160%);
+    border:1px solid rgba(255,255,255,0.5);
+    color:var(--ink);
+    border-radius:20px;
+    padding:28px;
+  }
+  .form-row{
+    display:grid;
+    gap:16px;
+    margin-bottom:16px;
+  }
+  @media(min-width:560px){.form-row.two{grid-template-columns:1fr 1fr;}}
+  label{
+    font-size:0.78rem;
+    font-weight:600;
+    text-transform:uppercase;
+    letter-spacing:0.05em;
+    color:var(--ink-soft);
+    display:block;
+    margin-bottom:6px;
+  }
+  input, select{
+    width:100%;
+    padding:12px 14px;
+    border-radius:10px;
+    border:1.5px solid var(--line);
+    background:var(--cream);
+    font-family:'Work Sans', sans-serif;
+    font-size:0.95rem;
+    color:var(--ink);
+  }
+  input:focus, select:focus{
+    outline:3px solid var(--sage-deep);
+    outline-offset:1px;
+    border-color:var(--sage-deep);
+  }
+  .form-submit{
+    width:100%;
+    justify-content:center;
+    margin-top:6px;
+    font-size:0.95rem;
+    padding:14px 20px;
+  }
+  
+  /* TEXTO DEL FORMULARIO - LETRA NEGRA */
+  .form-note{
+    font-size: 0.82rem; 
+    font-weight: 700; 
+    color: #000000 !important; 
+    margin-top: 12px;
+    text-align: center;
+  }
+
+  /* ---------- LOCATION ---------- */
+  .loc-grid{
+    display:grid;
+    gap:32px;
+  }
+  @media(min-width:900px){.loc-grid{grid-template-columns:1fr 1fr;}}
+  .loc-card{
+    background:rgba(255,255,255,0.55);
+    backdrop-filter:blur(20px) saturate(160%);
+    -webkit-backdrop-filter:blur(20px) saturate(160%);
+    border:1px solid rgba(255,255,255,0.65);
+    border-radius:var(--radius);
+    padding:28px;
+    box-shadow:var(--shadow);
+  }
+  .loc-row{
+    display:flex;
+    gap:14px;
+    padding:14px 0;
+    border-top:1px solid var(--line);
+  }
+  .loc-row:first-of-type{border-top:none; padding-top:0;}
+  .loc-row svg{width:22px;height:22px; flex-shrink:0; margin-top:2px; color:var(--sage-deep);}
+  .loc-row h4{margin:0 0 4px; font-size:0.95rem; font-family:'Work Sans', sans-serif; font-weight:700;}
+  .loc-row p{margin:0; color:var(--ink-soft); font-size:0.92rem;}
+  .loc-actions {
+    display: flex;
+    gap: 10px;
+    margin-top: 12px;
+    flex-wrap: wrap;
+  }
+  .hours-table{width:100%; border-collapse:collapse; margin-top:4px;}
+  .hours-table td{padding:4px 0; font-size:0.92rem; color:var(--ink-soft);}
+  .hours-table td:last-child{text-align:right; font-family:'JetBrains Mono', monospace; color:var(--ink); font-size:0.85rem;}
+  .map-frame{
+    border-radius:var(--radius);
+    overflow:hidden;
+    box-shadow:var(--shadow);
+    min-height:280px;
+    border:0;
+  }
+  .map-frame iframe{width:100%; height:100%; min-height:280px; border:0; display:block;}
+
+  /* ---------- FOOTER ---------- */
+  footer{
+    background:var(--ink);
+    color:rgba(251,246,239,0.75);
+    padding:44px 0 26px;
+    font-size:0.88rem;
+  }
+  .footer-top{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:space-between;
+    gap:20px;
+    align-items:center;
+    padding-bottom:24px;
+    border-bottom:1px solid rgba(251,246,239,0.15);
+  }
+  .footer-brand{
+    display:flex;
+    align-items:center;
+    gap:12px;
+    color:var(--cream);
+    font-family:'Fraunces', serif;
+    font-weight:700;
+  }
+  .footer-logo-chip{
+    background:var(--paper);
+    border-radius:10px;
+    padding:6px 10px;
+    display:flex;
+    align-items:center;
+    height:38px;
+  }
+  .footer-logo-chip img{height:100%; width:auto; object-fit:contain;}
+  .social-row{display:flex; gap:14px;}
+  .social-row a{
+    width:38px;height:38px;
+    border-radius:50%;
+    border:1.5px solid rgba(251,246,239,0.3);
+    display:flex;align-items:center;justify-content:center;
+    text-decoration:none;
+  }
+  .social-row a:hover{border-color:var(--gold);}
+  .footer-bottom{
+    padding-top:20px;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:space-between;
+    gap:10px;
+  }
+
+  /* float whatsapp button */
+  .float-wa{
+    position:fixed;
+    bottom:22px; right:22px;
+    z-index:60;
+    width:58px;height:58px;
+    border-radius:50%;
+    background:#25D366;
+    display:flex;align-items:center;justify-content:center;
+    box-shadow:0 10px 24px -8px rgba(0,0,0,0.4);
+    text-decoration:none;
+  }
+  .float-wa svg{width:28px;height:28px;}
+  .visually-hidden{
+    position:absolute; width:1px;height:1px;overflow:hidden;
+    clip:rect(0,0,0,0); white-space:nowrap;
+  }
+</style>
+</head>
+<body>
+<div class="bg-decor" aria-hidden="true">
+  <span class="b1"></span><span class="b2"></span><span class="b3"></span><span class="b4"></span><span class="b5"></span>
+</div>
+
+<!-- ============ HEADER ============ -->
+<header>
+  <div class="wrap nav">
+    <a href="#" class="brand">
+      <span class="brand-mark">
+        <img src="logo.png" alt="Logo Guapísimos Peluquería Canina">
+      </span>
+    </a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="navLinks">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M3 6h18M3 12h18M3 18h18" stroke="#17181B" stroke-width="2" stroke-linecap="round"/></svg>
+    </button>
+    <nav class="links" id="navLinks">
+      <a href="#servicios">Servicios</a>
+      <a href="#antes-despues">Antes/Después</a>
+      <a href="#galeria">Galería</a>
+      <a href="#tips">Tips</a>
+      <a href="#reservar">Reservar</a>
+      <a href="#ubicacion">Ubicación</a>
+    </nav>
+    <a href="#reservar" class="btn btn-gold nav-cta">Reservar cita</a>
+  </div>
+</header>
+
+<!-- ============ HERO ============ -->
+<section class="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <p class="eyebrow">Bucaramanga · Santander</p>
+      <h1>Un hermoso lugar para <em>consentir</em> a tu mascota</h1>
+      <p class="lead">Con muchísimo amor y profesionalismo. Baño, corte y spa canino, pensados para que tu compañero salga guapísimo y feliz.</p>
+      <div class="hero-actions">
+        <a class="btn btn-solid" href="#reservar">
+          Reservar cita por WhatsApp
+        </a>
+        <a class="btn btn-ghost" href="#servicios">Ver servicios</a>
+      </div>
+      
+      <!-- Bloque de Estadísticas simplificado: solo horario -->
+      <div class="hero-stats">
+        <div class="stat"><b>Lun–Sáb</b><span>8:00 am – 7:00 pm</span></div>
+      </div>
+    </div>
+
+    <!-- Nuevo espacio para el video del día a día (reemplaza el logo) -->
+    <div class="hero-video" style="max-width: 320px; margin: 0 auto; width: 100%;">
+      <div class="video-frame" style="aspect-ratio: 9/16; padding: 30px 20px;">
+        <div class="video-play">
+          <svg width="30" height="30" viewBox="0 0 24 24" fill="none"><path d="M8 5v14l12-7L8 5Z" fill="#FFFFFF"/></svg>
+        </div>
+        <p class="mono video-frame-label">video-dia-a-dia.mp4</p>
+        <p class="video-frame-note">Espacio listo para tu video del día a día (formato vertical)</p>
+      </div>
+    </div>
+    
+  </div>
+</section>
+
+<div class="wave" aria-hidden="true">
+  <svg viewBox="0 0 1200 60" preserveAspectRatio="none"><path d="M0 30 Q 60 0 120 30 T 240 30 T 360 30 T 480 30 T 600 30 T 720 30 T 840 30 T 960 30 T 1080 30 T 1200 30 V60 H0 Z" fill="#1C93C4"></path></svg>
+</div>
+
+<!-- ============ SERVICIOS ============ -->
+<section id="servicios" class="band-sage">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="eyebrow">Servicios</p>
+      <h2>Ticket de entrada</h2>
+      <p>Elige el paquete según el tamaño, raza o tipo de pelaje de tu mascota. Todos incluyen baño con shampoo hipoalergénico y secado profesional en cabina.</p>
+    </div>
+
+    <div class="ticket-grid">
+
+      <div class="ticket">
+        <div class="ticket-top">
+          <span class="ticket-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><circle cx="7" cy="7" r="1.7" fill="#17181B"/><circle cx="12" cy="5" r="1.7" fill="#17181B"/><circle cx="17" cy="7" r="1.7" fill="#17181B"/><path d="M12 11c-3.3 0-6 2.6-6 5.6A2.4 2.4 0 0 0 8.4 19c1 0 1.8-.5 3.1-.5s2.1.5 3.1.5a2.4 2.4 0 0 0 2.4-2.4C18 13.6 15.3 11 12 11Z" stroke="#17181B" stroke-width="1.5"/></svg>
+          </span>
+          <span class="ticket-no mono">N.º 001</span>
+        </div>
+        <h3>Spa razas mini</h3>
+        <p class="breed-note">Pinscher, Chihuahua, Bulldog Francés, Boston Terrier, etc.</p>
+        <ul class="ticket-list">
+          <li>Baño con shampoo hipoalergénico</li>
+          <li>Secado en cabina</li>
+          <li>Deslanado</li>
+          <li>Corte (en caso de ser requerido)</li>
+          <li>Corte de uñas</li>
+          <li>Limpieza de oídos</li>
+        </ul>
+        <div class="ticket-foot">
+          <span class="ticket-price">$35.000 – $55.000</span>
+          <span class="ticket-time">~ 4 h</span>
+        </div>
+      </div>
+
+      <div class="ticket">
+        <div class="ticket-top">
+          <span class="ticket-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M6 14c0-4 2.7-7 6-7s6 3 6 7-2.7 6-6 6-6-2-6-6Z" stroke="#17181B" stroke-width="1.6"/><path d="M8 8 6 4M16 8l2-4" stroke="#17181B" stroke-width="1.6" stroke-linecap="round"/><circle cx="9.5" cy="13" r="1" fill="#17181B"/><circle cx="14.5" cy="13" r="1" fill="#17181B"/></svg>
+          </span>
+          <span class="ticket-no mono">N.º 002</span>
+        </div>
+        <h3>Spa razas medianas</h3>
+        <p class="breed-note">Yorkie, Shih Tzu, Westy, Schnauzer, Pomerania, Cocker, etc.</p>
+        <ul class="ticket-list">
+          <li>Baño con shampoo hipoalergénico</li>
+          <li>Secado en cabina</li>
+          <li>Deslanado</li>
+          <li>Corte (en caso de ser requerido)</li>
+          <li>Corte de uñas</li>
+          <li>Limpieza de oídos</li>
+          <li>Peinado</li>
+        </ul>
+        <div class="ticket-foot">
+          <span class="ticket-price">$70.000 – $80.000</span>
+          <span class="ticket-time">~ 4 h</span>
+        </div>
+      </div>
+
+      <div class="ticket">
+        <div class="ticket-top">
+          <span class="ticket-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><circle cx="6.5" cy="7.5" r="2" fill="#17181B"/><circle cx="12" cy="5" r="2" fill="#17181B"/><circle cx="17.5" cy="7.5" r="2" fill="#17181B"/><path d="M12 11c-3.9 0-7 3-7 6.5A2.6 2.6 0 0 0 7.6 20c1.2 0 2.1-.6 3.6-.6s2.4.6 3.6.6a2.6 2.6 0 0 0 2.6-2.5C19.4 14 16.3 11 12 11Z" stroke="#17181B" stroke-width="2"/></svg>
+          </span>
+          <span class="ticket-no mono">N.º 003</span>
+        </div>
+        <h3>Spa razas grandes</h3>
+        <p class="breed-note">Pastores, Golden, Labrador, Husky, Samoyedo, Bernés, etc.</p>
+        <ul class="ticket-list">
+          <li>Baño con shampoo hipoalergénico</li>
+          <li>Secado en cabina</li>
+          <li>Deslanado</li>
+          <li>Corte (en caso de ser requerido)</li>
+          <li>Corte de uñas</li>
+          <li>Limpieza de oídos</li>
+        </ul>
+        <div class="ticket-foot">
+          <span class="ticket-price">$75.000 – $200.000</span>
+          <span class="ticket-time">~ 4 h</span>
+        </div>
+      </div>
+
+      <div class="ticket">
+        <div class="ticket-top">
+          <span class="ticket-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M6 4h9a3 3 0 0 1 3 3v2H6z" stroke="#17181B" stroke-width="1.5" stroke-linejoin="round"/><path d="M8 9v9M12 9v9M16 9v7" stroke="#17181B" stroke-width="1.4" stroke-linecap="round"/></svg>
+          </span>
+          <span class="ticket-no mono">N.º 004</span>
+        </div>
+        <h3>Spa razas pelo corto</h3>
+        <p class="breed-note">Beagle, Bulldog Inglés, American Bully, Pitbull, Criollo, etc.</p>
+        <ul class="ticket-list">
+          <li>Baño con shampoo hipoalergénico</li>
+          <li>Secado en cabina</li>
+          <li>Deslanado</li>
+          <li>Corte de uñas</li>
+          <li>Limpieza de oídos</li>
+        </ul>
+        <div class="ticket-foot">
+          <span class="ticket-price">$50.000 – $100.000</span>
+          <span class="ticket-time">~ 4 h</span>
+        </div>
+      </div>
+
+      <div class="ticket">
+        <div class="ticket-top">
+          <span class="ticket-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M5 10 7 4l3 4h4l3-4 2 6" stroke="#17181B" stroke-width="1.5" stroke-linejoin="round" fill="none"/><circle cx="12" cy="14" r="6" stroke="#17181B" stroke-width="1.5"/><circle cx="9.5" cy="13.5" r="0.9" fill="#17181B"/><circle cx="14.5" cy="13.5" r="0.9" fill="#17181B"/></svg>
+          </span>
+          <span class="ticket-no mono">N.º 005</span>
+        </div>
+        <h3>Spa gatos</h3>
+        <p class="breed-note">Persa, Siamés, Turco, Mestizo, etc.</p>
+        <ul class="ticket-list">
+          <li>Baño con shampoo hipoalergénico</li>
+          <li>Secado en cabina</li>
+          <li>Deslanado</li>
+          <li>Corte (en caso de ser requerido)</li>
+          <li>Corte de uñas</li>
+          <li>Limpieza de oídos</li>
+        </ul>
+        <div class="ticket-foot">
+          <span class="ticket-price">$70.000 – $80.000</span>
+          <span class="ticket-time">~ 4 h</span>
+        </div>
+      </div>
+
+      <div class="ticket">
+        <div class="ticket-top">
+          <span class="ticket-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9" stroke="#17181B" stroke-width="1.5"/><path d="M12 8v8M8 12h8" stroke="#17181B" stroke-width="1.6" stroke-linecap="round"/></svg>
+          </span>
+          <span class="ticket-no mono">N.º 006</span>
+        </div>
+        <h3>Servicios adicionales</h3>
+        <ul class="ticket-extra-list">
+          <li>Desenredado <b>Desde $5.000</b></li>
+          <li>Corte de uñas <b>$8.000</b></li>
+          <li>Baño medicado <b>+ $5.000</b></li>
+          <li>Baño insecticida <b>+ $5.000</b></li>
+          <li>Vacunación <b>Según necesidad</b></li>
+          <li>Consulta veterinaria <b>Desde $65.000</b></li>
+        </ul>
+      </div>
+
+    </div>
+
+    <p class="price-note">* Precios de referencia — ajústalos a tu tarifario real. El precio final depende del tamaño, raza y estado del pelaje. Baño medicado / insecticida se cobran como adicional sobre el valor del spa elegido.</p>
+  </div>
+</section>
+
+<div class="wave" aria-hidden="true" style="transform:rotate(180deg);">
+  <svg viewBox="0 0 1200 60" preserveAspectRatio="none"><path d="M0 30 Q 60 0 120 30 T 240 30 T 360 30 T 480 30 T 600 30 T 720 30 T 840 30 T 960 30 T 1080 30 T 1200 30 V60 H0 Z" fill="#1C93C4"></path></svg>
+</div>
+
+<!-- ============ ANTES / DESPUÉS ============ -->
+<section id="antes-despues">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="eyebrow">Transformaciones</p>
+      <h2>Antes y después</h2>
+      <p>Desliza cada tarjeta para ver la magia de un buen spa canino. Reemplaza las imágenes de ejemplo por fotos reales de tus clientes — instrucciones en el comentario del código.</p>
+    </div>
+
+    <!--
+      Para usar fotos reales en cada comparación:
+      1. Cambia el atributo style="background-image:url('...')" de .ba-before (foto ANTES) y .ba-after (foto DESPUÉS).
+      2. Deja las imágenes con el mismo encuadre/tamaño para que la comparación se vea prolija.
+      Ejemplo:
+        <div class="ba-after" style="background-image:url('fotos/despues1.jpg')"></div>
+        <div class="ba-before" style="background-image:url('fotos/antes1.jpg')"></div>
+    -->
+    <div class="ba-carousel">
+      <div class="ba-track" id="baTrack">
+
+        <div class="ba-card">
+          <div class="ba-slider" data-ba>
+            <div class="ba-after" style="background:linear-gradient(135deg,#CDEEF9,#8FD6EF);"></div>
+            <div class="ba-before" style="background:linear-gradient(135deg,#9AA3A8,#6B747A); clip-path:inset(0 50% 0 0);"></div>
+            <span class="ba-tag ba-tag-before">Antes</span>
+            <span class="ba-tag ba-tag-after">Después</span>
+            <input type="range" class="ba-range" min="0" max="100" value="50" aria-label="Deslizar para comparar antes y después">
+            <div class="ba-handle" style="left:50%;">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M8 6 3 12l5 6M16 6l5 6-5 6" stroke="#17181B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </div>
+          </div>
+          <p class="ba-caption mono">antes1.jpg / despues1.jpg</p>
+        </div>
+
+        <div class="ba-card">
+          <div class="ba-slider" data-ba>
+            <div class="ba-after" style="background:linear-gradient(135deg,#CDEEF9,#8FD6EF);"></div>
+            <div class="ba-before" style="background:linear-gradient(135deg,#9AA3A8,#6B747A); clip-path:inset(0 50% 0 0);"></div>
+            <span class="ba-tag ba-tag-before">Antes</span>
+            <span class="ba-tag ba-tag-after">Después</span>
+            <input type="range" class="ba-range" min="0" max="100" value="50" aria-label="Deslizar para comparar antes y después">
+            <div class="ba-handle" style="left:50%;">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M8 6 3 12l5 6M16 6l5 6-5 6" stroke="#17181B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </div>
+          </div>
+          <p class="ba-caption mono">antes2.jpg / despues2.jpg</p>
+        </div>
+
+        <div class="ba-card">
+          <div class="ba-slider" data-ba>
+            <div class="ba-after" style="background:linear-gradient(135deg,#CDEEF9,#8FD6EF);"></div>
+            <div class="ba-before" style="background:linear-gradient(135deg,#9AA3A8,#6B747A); clip-path:inset(0 50% 0 0);"></div>
+            <span class="ba-tag ba-tag-before">Antes</span>
+            <span class="ba-tag ba-tag-after">Después</span>
+            <input type="range" class="ba-range" min="0" max="100" value="50" aria-label="Deslizar para comparar antes y después">
+            <div class="ba-handle" style="left:50%;">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M8 6 3 12l5 6M16 6l5 6-5 6" stroke="#17181B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </div>
+          </div>
+          <p class="ba-caption mono">antes3.jpg / despues3.jpg</p>
+        </div>
+
+      </div>
+
+      <button type="button" class="ba-arrow ba-arrow-prev" id="baPrev" aria-label="Comparación anterior">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M15 6 9 12l6 6" stroke="#17181B" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </button>
+      <button type="button" class="ba-arrow ba-arrow-next" id="baNext" aria-label="Siguiente comparación">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M9 6l6 6-6 6" stroke="#17181B" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </button>
+
+      <div class="ba-dots" id="baDots">
+        <button type="button" class="ba-dot active" data-index="0" aria-label="Ir a comparación 1"></button>
+        <button type="button" class="ba-dot" data-index="1" aria-label="Ir a comparación 2"></button>
+        <button type="button" class="ba-dot" data-index="2" aria-label="Ir a comparación 3"></button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="wave" aria-hidden="true">
+  <svg viewBox="0 0 1200 60" preserveAspectRatio="none"><path d="M0 30 Q 60 0 120 30 T 240 30 T 360 30 T 480 30 T 600 30 T 720 30 T 840 30 T 960 30 T 1080 30 T 1200 30 V60 H0 Z" fill="#CDEEF9"></path></svg>
+</div>
+
+<!-- ============ GALERÍA ============ -->
+<section id="galeria">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="eyebrow">Galería</p>
+      <h2>Nuestros clientes más guapísimos</h2>
+      <p>Todas nuestras fotos y videos más recientes viven en Instagram — síguenos ahí para verlos primero.</p>
+    </div>
+
+    <a href="https://www.instagram.com/guapisimospeluqueriacanina/" target="_blank" rel="noopener" class="ig-card">
+      <span class="ig-card-icon">
+        <svg width="30" height="30" viewBox="0 0 24 24" fill="none"><rect x="2.5" y="2.5" width="19" height="19" rx="6" stroke="#FFFFFF" stroke-width="1.8"/><circle cx="12" cy="12" r="5" stroke="#FFFFFF" stroke-width="1.8"/><circle cx="18" cy="6" r="1.3" fill="#FFFFFF"/></svg>
+      </span>
+      <span class="ig-card-body">
+        <span class="ig-card-handle">@guapisimospeluqueriacanina</span>
+        <span class="ig-card-sub">+7.800 familias peludas nos siguen — fotos, videos y transformaciones todos los días</span>
+      </span>
+      <span class="ig-card-cta">
+        Ver en Instagram
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M9 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </span>
+    </a>
+  </div>
+</section>
+
+<!-- ============ TIPS DE CUIDADO ============ -->
+<section id="tips" class="band-sage">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="eyebrow">Tips de cuidado</p>
+      <h2>Consejos de nuestros groomers</h2>
+      <p>Pequeños hábitos que marcan la diferencia en la salud y el pelaje de tu mascota entre visita y visita.</p>
+    </div>
+
+    <div class="tips-list">
+      <details class="tip-item" open>
+        <summary>¿Cada cuánto debo bañar a mi perro?</summary>
+        <p>Depende de la raza y el tipo de piel: en general cada 3–4 semanas es un buen ritmo. Bañar con más frecuencia de la necesaria puede resecar la piel si no se usa un shampoo adecuado — por eso en Guapísimos usamos shampoo hipoalergénico en todos los spa.</p>
+      </details>
+      <details class="tip-item">
+        <summary>¿Cómo evito que se le hagan nudos en el pelo?</summary>
+        <p>Cepilla a tu mascota 2–3 veces por semana si es de pelo largo (Yorkie, Shih Tzu, Pomerania), enfocándote en axilas, orejas y detrás de las patas, que es donde más se enredan. Un cepillado constante en casa hace que el deslanado en el spa sea mucho más cómodo para tu peludito.</p>
+      </details>
+      <details class="tip-item">
+        <summary>¿Cada cuánto se deben cortar las uñas?</summary>
+        <p>Cada 3–4 semanas en promedio. Sabrás que ya es momento si escuchas las uñas "repicar" contra el piso al caminar. Unas uñas muy largas pueden alterar la postura y pisada de tu mascota.</p>
+      </details>
+      <details class="tip-item">
+        <summary>¿Cómo cuido los oídos de mi mascota en casa?</summary>
+        <p>Revisa que no haya mal olor, enrojecimiento o exceso de cera. Nunca uses cotonetes dentro del canal auditivo — para eso está la limpieza profesional de oídos que incluye cada spa.</p>
+      </details>
+      <details class="tip-item">
+        <summary>¿Necesito bañarlo distinto en época de calor o pulgas?</summary>
+        <p>Sí. En temporadas de más pulgas o garrapatas recomendamos el baño insecticida como refuerzo, y si tu mascota tiene alguna irritación en la piel, el baño medicado ayuda a calmarla. Pregúntanos cuál aplica para tu caso.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- ============ RESERVAR ============ -->
+<section id="reservar">
+  <div class="wrap">
+    <div class="booking">
+      <div>
+        <p class="eyebrow">Reserva tu cita</p>
+        <h2>Agenda como prefieras</h2>
+        <p>Escríbenos directo por WhatsApp con el formulario rápido, o revisa el calendario en vivo si quieres ver la disponibilidad real sin escribir nada.</p>
+        <ol class="steps">
+          <li><b>1</b> Cuéntanos el nombre de tu mascota y el servicio que buscas.</li>
+          <li><b>2</b> Elige el día y la hora que prefieras.</li>
+          <li><b>3</b> Confirmamos disponibilidad por WhatsApp en minutos.</li>
+        </ol>
+      </div>
+
+      <div class="booking-panels">
+        <div class="booking-tabs" role="tablist">
+          <button type="button" class="booking-tab active" data-tab="whatsapp" role="tab" aria-selected="true">
+            Reserva rápida (WhatsApp)
+          </button>
+          <button type="button" class="booking-tab" data-tab="calendar" role="tab" aria-selected="false">
+            Ver calendario
+          </button>
+        </div>
+
+        <div class="form-card" data-panel="whatsapp">
+        <form id="bookingForm">
+          <div class="form-row two">
+            <div>
+              <label for="ownerName">Tu nombre</label>
+              <input type="text" id="ownerName" required placeholder="Ej. María Pérez">
+            </div>
+            <div>
+              <label for="petName">Nombre de tu mascota</label>
+              <input type="text" id="petName" required placeholder="Ej. Toby">
+            </div>
+          </div>
+          <div class="form-row">
+            <div>
+              <label for="service">Servicio</label>
+              <select id="service" required>
+                <option value="Spa razas mini">Spa razas mini</option>
+                <option value="Spa razas medianas">Spa razas medianas</option>
+                <option value="Spa razas grandes">Spa razas grandes</option>
+                <option value="Spa razas pelo corto">Spa razas pelo corto</option>
+                <option value="Spa gatos">Spa gatos</option>
+                <option value="Servicio adicional (desenredado, uñas, baño medicado, etc.)">Servicio adicional (desenredado, uñas, baño medicado, etc.)</option>
+                <option value="Otro / no estoy seguro">Otro / no estoy seguro</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-row two">
+            <div>
+              <label for="date">Fecha preferida</label>
+              <input type="date" id="date" required>
+            </div>
+            <div>
+              <label for="time">Hora preferida (citas: 8:00 AM – 3:00 PM)</label>
+              <select id="time" required>
+                <option value="" disabled selected>Elige una hora</option>
+                <option value="8:00 AM">8:00 AM</option>
+                <option value="8:30 AM">8:30 AM</option>
+                <option value="9:00 AM">9:00 AM</option>
+                <option value="9:30 AM">9:30 AM</option>
+                <option value="10:00 AM">10:00 AM</option>
+                <option value="10:30 AM">10:30 AM</option>
+                <option value="11:00 AM">11:00 AM</option>
+                <option value="11:30 AM">11:30 AM</option>
+                <option value="12:00 PM">12:00 PM</option>
+                <option value="12:30 PM">12:30 PM</option>
+                <option value="1:00 PM">1:00 PM</option>
+                <option value="1:30 PM">1:30 PM</option>
+                <option value="2:00 PM">2:00 PM</option>
+                <option value="2:30 PM">2:30 PM</option>
+                <option value="3:00 PM">3:00 PM</option>
+              </select>
+            </div>
+          </div>
+          <button type="submit" class="btn btn-gold form-submit">
+            Enviar solicitud por WhatsApp
+          </button>
+          
+          <p class="form-note">Al enviar se abrirá WhatsApp con tu mensaje listo. Citas disponibles de 8:00 AM a 3:00 PM, lun–sáb (horario de atención general: 8:00 am – 7:00 pm).</p>
+          
+        </form>
+        </div>
+
+        <!--
+          CALENDARIO EN VIVO (Calendly, gratis) — pasos para activarlo:
+          1. Crea una cuenta gratis en https://calendly.com
+          2. Crea un "Event type" (ej. "Cita Guapísimos", 30-60 min, disponible lun-sáb 8am-3pm).
+          3. Copia tu link de reserva (algo como https://calendly.com/tu-usuario/cita-guapisimos).
+          4. Reemplaza TODO el div.calendar-placeholder de abajo por este bloque:
+
+            <div class="calendly-inline-widget" data-url="https://calendly.com/TU-USUARIO/TU-EVENTO"
+              style="min-width:280px; height:640px; border-radius:20px; overflow:hidden;"></div>
+            <script src="https://assets.calendly.com/assets/external/widget.js" async></script>
+
+          Con esto tus clientes verán tu disponibilidad real y no podrán reservar una hora ya ocupada.
+        -->
+        <div class="form-card calendar-placeholder" data-panel="calendar" hidden>
+          <div class="calendar-empty">
+            <svg width="40" height="40" viewBox="0 0 24 24" fill="none"><rect x="3" y="5" width="18" height="16" rx="3" stroke="#17181B" stroke-width="1.5"/><path d="M3 9h18M8 3v4M16 3v4" stroke="#17181B" stroke-width="1.5" stroke-linecap="round"/></svg>
+            <h4>Conecta tu calendario en vivo</h4>
+            <p>Aquí se mostrará tu disponibilidad real (por ejemplo con Calendly, gratis) para que tus clientes reserven sin escribir y sin duplicar horarios.</p>
+            <p class="calendar-note mono">Instrucciones para activarlo en el comentario justo arriba de este bloque en el código.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ UBICACIÓN CON WAZE ============ -->
+<section id="ubicacion">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="eyebrow">Visítanos</p>
+      <h2>Ubicación y horario</h2>
+    </div>
+    <div class="loc-grid">
+      <div class="loc-card">
+        <div class="loc-row">
+          <svg viewBox="0 0 24 24" fill="none"><path d="M12 21s-7-6.2-7-11a7 7 0 0114 0c0 4.8-7 11-7 11Z" stroke="currentColor" stroke-width="1.6"/><circle cx="12" cy="10" r="2.4" stroke="currentColor" stroke-width="1.6"/></svg>
+          <div>
+            <h4>Dirección</h4>
+            <p>Cra 29 #33-73, Bucaramanga, Santander, Colombia</p>
+            <div class="loc-actions">
+              <a href="https://ul.waze.com/ul?ll=7.1189,-73.1185&navigate=yes" target="_blank" rel="noopener" class="btn btn-waze">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" fill="#17181B"/><path d="M8 12a4 4 0 1 1 8 0" stroke="#FFF" stroke-width="2"/></svg>
+                Abrir en Waze
+              </a>
+              <a href="https://www.google.com/maps/dir/?api=1&destination=Cra+29+%2333-73%2C+Bucaramanga%2C+Santander%2C+Colombia" target="_blank" rel="noopener" class="btn btn-ghost">
+                Google Maps
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="loc-row">
+          <svg viewBox="0 0 24 24" fill="none"><path d="M4 5c0-1 1-2 2-2h2l2 5-2 2c1 3 3 5 6 6l2-2 5 2v2c0 1-1 2-2 2C10 20 4 14 4 5Z" stroke="currentColor" stroke-width="1.6"/></svg>
+          <div>
+            <h4>Teléfono / WhatsApp</h4>
+            <p>304 530 4836</p>
+          </div>
+        </div>
+        <div class="loc-row">
+          <svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.6"/><path d="M12 7v5l3 3" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+          <div>
+            <h4>Horario</h4>
+            <table class="hours-table">
+              <tr><td>Lunes – Sábado</td><td>8:00 am – 7:00 pm</td></tr>
+              <tr><td>Domingo</td><td>Cerrado</td></tr>
+            </table>
+          </div>
+        </div>
+      </div>
+      <div class="map-frame">
+        <iframe
+          src="https://www.google.com/maps?q=Cra+29+%2333-73%2C+Bucaramanga%2C+Santander%2C+Colombia&output=embed"
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          title="Mapa de ubicación de Guapísimos Peluquería Canina">
+        </iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer>
+  <div class="wrap">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <span class="footer-logo-chip">
+          <img src="logo.png" alt="Logo Guapísimos Peluquería Canina">
+        </span>
+        Guapísimos Peluquería Canina
+      </div>
+      <div class="social-row">
+        <a href="https://www.instagram.com/guapisimospeluqueriacanina/" target="_blank" rel="noopener" aria-label="Instagram">
+          <svg width="17" height="17" viewBox="0 0 24 24" fill="none"><rect x="3" y="3" width="18" height="18" rx="5" stroke="#F5FAFD" stroke-width="1.5"/><circle cx="12" cy="12" r="4" stroke="#F5FAFD" stroke-width="1.5"/><circle cx="17.2" cy="6.8" r="1" fill="#F5FAFD"/></svg>
+        </a>
+        <a href="https://wa.me/573045304836" target="_blank" rel="noopener" aria-label="WhatsApp">
+          <svg width="17" height="17" viewBox="0 0 24 24" fill="none"><path d="M4 5c0-1 1-2 2-2h2l2 5-2 2c1 3 3 5 6 6l2-2 5 2v2c0 1-1 2-2 2C10 20 4 14 4 5Z" stroke="#F5FAFD" stroke-width="1.5"/></svg>
+        </a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span id="year"></span> Guapísimos Peluquería Canina · Bucaramanga, Colombia</span>
+      <span>Hecho con 🐾 para peluditos guapísimos</span>
+    </div>
+  </div>
+</footer>
+
+<a class="float-wa" href="https://wa.me/573045304836?text=Hola%2C%20quiero%20más%20información%20sobre%20sus%20servicios" target="_blank" rel="noopener" aria-label="Escríbenos por WhatsApp">
+  <svg viewBox="0 0 24 24" fill="none"><path d="M4 5c0-1 1-2 2-2h2l2 5-2 2c1 3 3 5 6 6l2-2 5 2v2c0 1-1 2-2 2C10 20 4 14 4 5Z" stroke="#FFFDF8" stroke-width="1.6"/></svg>
+</a>
+
+<script>
+  // Mobile menu toggle
+  const toggle = document.getElementById('menuToggle');
+  const links = document.getElementById('navLinks');
+  toggle.addEventListener('click', () => {
+    const open = links.classList.toggle('open');
+    toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+  });
+  links.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
+    links.classList.remove('open');
+    toggle.setAttribute('aria-expanded', 'false');
+  }));
+
+  // Footer year
+  document.getElementById('year').textContent = new Date().getFullYear();
+
+  // Antes / Después: carrusel
+  const baTrack = document.getElementById('baTrack');
+  const baPrev = document.getElementById('baPrev');
+  const baNext = document.getElementById('baNext');
+  const baDots = document.querySelectorAll('.ba-dot');
+  if (baTrack) {
+    let baIndex = 0;
+    const baTotal = baTrack.children.length;
+    const goToSlide = (i) => {
+      baIndex = (i + baTotal) % baTotal;
+      baTrack.style.transform = `translateX(-${baIndex * 100}%)`;
+      baDots.forEach((dot, di) => dot.classList.toggle('active', di === baIndex));
+    };
+    baPrev.addEventListener('click', () => goToSlide(baIndex - 1));
+    baNext.addEventListener('click', () => goToSlide(baIndex + 1));
+    baDots.forEach((dot) => dot.addEventListener('click', () => goToSlide(parseInt(dot.dataset.index, 10))));
+
+    // Deslizar con el dedo para cambiar de comparación (sin interferir con el slider antes/después)
+    let touchStartX = null;
+    baTrack.addEventListener('touchstart', (e) => { touchStartX = e.touches[0].clientX; }, { passive: true });
+    baTrack.addEventListener('touchend', (e) => {
+      if (touchStartX === null) return;
+      const diff = e.changedTouches[0].clientX - touchStartX;
+      if (Math.abs(diff) > 50) goToSlide(baIndex + (diff < 0 ? 1 : -1));
+      touchStartX = null;
+    });
+  }
+
+  // Antes / Después: slider de arrastre (dentro de cada tarjeta)
+  document.querySelectorAll('[data-ba]').forEach((slider) => {
+    const before = slider.querySelector('.ba-before');
+    const handle = slider.querySelector('.ba-handle');
+    const range = slider.querySelector('.ba-range');
+    const update = (val) => {
+      before.style.clipPath = `inset(0 ${100 - val}% 0 0)`;
+      handle.style.left = val + '%';
+    };
+    range.addEventListener('input', (e) => update(e.target.value));
+    update(range.value);
+  });
+
+  // Pestañas de reserva: WhatsApp / Calendario
+  const bookingTabs = document.querySelectorAll('.booking-tab');
+  const bookingPanels = document.querySelectorAll('[data-panel]');
+  bookingTabs.forEach((tab) => {
+    tab.addEventListener('click', () => {
+      bookingTabs.forEach((t) => { t.classList.remove('active'); t.setAttribute('aria-selected', 'false'); });
+      tab.classList.add('active');
+      tab.setAttribute('aria-selected', 'true');
+      const target = tab.getAttribute('data-tab');
+      bookingPanels.forEach((panel) => {
+        panel.hidden = panel.getAttribute('data-panel') !== target;
+      });
+    });
+  });
+
+  // Configuración del Número de WhatsApp
+  const WHATSAPP_NUMBER = "573045304836";
+
+  // Booking form -> WhatsApp deep link
+  document.getElementById('bookingForm').addEventListener('submit', function (e) {
+    e.preventDefault();
+    const owner = document.getElementById('ownerName').value.trim();
+    const pet = document.getElementById('petName').value.trim();
+    const service = document.getElementById('service').value;
+    const date = document.getElementById('date').value;
+    const time = document.getElementById('time').value;
+
+    const message =
+      `Hola, soy ${owner}. Quiero reservar una cita para mi mascota ${pet}.\n` +
+      `Servicio: ${service}\n` +
+      `Fecha preferida: ${date}\n` +
+      `Hora preferida: ${time}`;
+
+    const url = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(message)}`;
+    window.open(url, '_blank', 'noopener');
+  });
+</script>
+
+</body>
+</html>
